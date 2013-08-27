@@ -5,7 +5,8 @@ This is [my](http://www.few.vu.nl/~pgroth/) lab notebook. The goal is to be able
 
 You'll find below the system setup. I'm using [IPython Notebook](http://ipython.org/notebook.html) as the note taking environment. 
 
-Notes are divided into directories with brief readmes. 
+Current Notebooks
+[Notes on using the Open PHACTS API in Python](http://nbviewer.ipython.org/urls/raw.github.com/pgroth/notebook/master/openphacts-api.ipynb)
 
 
 
