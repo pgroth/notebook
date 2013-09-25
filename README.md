@@ -9,6 +9,8 @@ Current Notebooks
 
 * [Notes on using the Open PHACTS API in Python](http://nbviewer.ipython.org/urls/raw.github.com/pgroth/notebook/master/openphacts-api.ipynb)
 
+* [Measuring number of occurrences of paths between classes in RDF Graphs](http://nbviewer.ipython.org/urls/raw.github.com/pgroth/notebook/master/RDF_Path_Measurement.ipynb)
+
 
 
 Setup
