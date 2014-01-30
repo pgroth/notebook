@@ -14,6 +14,7 @@ Instructions
 
 Downloading and launching the a small pathways api. 
 
+    $ wget https://raw.github.com/pgroth/notebook/master/LDAExample/wikipathways-lda-setup.ttl
     $ wget http://repository.epimorphics.com/com/epimorphics/lda/elda-standalone/1.2.28/elda-standalone-1.2.28.jar
     $ java -jar elda-standalone-1.2.28.jar
     ## kill elda ctrl^c
