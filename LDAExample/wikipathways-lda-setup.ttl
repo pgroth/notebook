@@ -1,0 +1,95 @@
+#
+# A simple LDA example using Wikipathways.org based on the ELDA example tiny-education.ttl
+#
+
+# Assorted prefix declarations. Some of them are for the structuring
+# of the API config, others are for the vocabulary definitions.
+#
+
+@prefix spec:               <http://example.org/lda-pathways/api-config#> .
+@prefix api:                <http://purl.org/linked-data/api/vocab#> .
+@prefix dc:                 <http://purl.org/dc/elements/1.1/> .
+
+@prefix foaf:               <http://xmlns.com/foaf/0.1/> .
+@prefix geo:                <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+@prefix owl:                <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:                <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:               <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:                <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:               <http://www.w3.org/2004/02/skos/core#> .
+@prefix wp:                 <http://vocabularies.wikipathways.org/wp#> .
+
+
+# The elda namespace/prefix is for Elda extensions to the LDA specification.
+
+@prefix elda:               <http://www.epimorphics.com/vocabularies/lda#> .
+
+#############################################################################
+# API config
+
+spec:pathwaysAPI a api:API 
+	; rdfs:label "Pathways API"@en
+	# Name the SPARQL endpoint which supplies the data we present
+	; api:sparqlEndpoint <http://sparql.wikipathways.org/>  
+	# the page size can't be set higher than this 
+	; api:maxPageSize 50
+	# and this is the default page size
+	; api:defaultPageSize 10 
+	# the viewer to use by default, a DESCRIBE plus labels for all the
+	# resources that have them.
+	; api:defaultViewer api:labelledDescribeViewer
+	# the default formatter is the XSLT formatter defined above 
+	; api:defaultFormatter spec:HtmlFormatter 
+	# one endpoint in this config
+	; api:endpoint spec:pathwayList 
+	#
+	# Elda magic follows
+	#
+	# tells Elda where the SPARQL endpoint's form page is, if it has one
+    ; api:variable [api:name "visibleSparqlForm"; api:value "http://sparql.wikipathways.org"] .
+    
+    
+# Endpoint definitions: just the one, list pathways
+
+spec:pathwayList a api:ListEndpoint 
+	; rdfs:label "List of Pathways" 
+	; api:uriTemplate "/pathways" 
+	; api:selector [
+              api:where "?item a wp:Pathway . ?item dc:title ?title .";
+        ] ;
+        api:defaultViewer spec:viewerPathway
+	.
+
+spec:viewerPathway
+	a api:Viewer 
+	; api:name "viewPathway" 
+	; api:template 
+		"?item dc:title ?title . ?item wp:organism ?organism . ?organism rdfs:label ?orgLabel ."
+	.
+
+# This XSLT formatter produces rich HTML from the viewer properties.
+#
+spec:HtmlFormatter a api:XsltFormatter 
+	; api:name "html" 
+	; api:mimeType "text/html; charset=utf-8" 
+	; api:stylesheet "lda-assets/xslt/result-osm.xsl"
+	.
+
+############################################################################
+# The rest of this config is vocabulary definitions.
+
+dc:title api:label "title" .
+wp:organism api:label "organism" .
+
+rdf:type api:label "type" 
+    ; api:multiValued true 
+    ; rdfs:range rdfs:Class 
+    .
+
+rdfs:label api:label "label" ; api:multiValued true .
+
+rdfs:seeAlso api:label "seeAlso" ; api:multiValued true .
+
+    
+
