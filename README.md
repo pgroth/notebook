@@ -11,7 +11,7 @@ Current Notebooks
 
 * [Measuring number of occurrences of paths between classes in RDF Graphs](http://nbviewer.ipython.org/urls/raw.github.com/pgroth/notebook/master/RDF_Path_Measurement.ipynb)
 
-* [Visualizing the results of SPARQL queries with matplatlib](https://raw2.github.com/pgroth/notebook/master/sparql-viz-play.ipynb)
+* [Visualizing the results of SPARQL queries with matplatlib](http://nbviewer.ipython.org/urls/raw.github.com/pgroth/notebook/master/sparql-viz-play.ipynb)
 
 
 
