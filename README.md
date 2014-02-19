@@ -30,37 +30,37 @@ The setup is based on the instructions at: [http://www.lowindata.com/2013/instal
 
 IPython virtualenv installed packages:
 
-Jinja==1.2
-Jinja2==2.7.1
-MarkupSafe==0.18
-Pattern==2.6
-Pygments==1.6
-SPARQLWrapper==1.5.2
-distribute==0.6.49
-html5lib==1.0b3
-ipython==1.0.0
-isodate==0.4.9
-matplotlib==1.3.0
-mpld3==0.0.1
-networkx==1.8.1
-nose==1.3.0
-numpy==1.7.1
-pandas==0.12.0
-pyparsing==1.5.7
-python-dateutil==2.1
-pytz==2013.8
-pyzmq==13.1.0
-rdflib==4.0.1
-readline==6.2.4.1
-scipy==0.12.0
-six==1.3.0
-stevedore==0.10
-textutils==0.1
-tornado==3.1
-virtualenv==1.9.1
-virtualenv-clone==0.2.4
-virtualenvwrapper==4.0
-wsgiref==0.1.2
+    Jinja==1.2
+    Jinja2==2.7.1
+    MarkupSafe==0.18
+    Pattern==2.6
+    Pygments==1.6
+    SPARQLWrapper==1.5.2
+    distribute==0.6.49
+    html5lib==1.0b3
+    ipython==1.0.0
+    isodate==0.4.9
+    matplotlib==1.3.0
+    mpld3==0.0.1
+    networkx==1.8.1
+    nose==1.3.0
+    numpy==1.7.1
+    pandas==0.12.0
+    pyparsing==1.5.7
+    python-dateutil==2.1
+    pytz==2013.8
+    pyzmq==13.1.0
+    rdflib==4.0.1
+    readline==6.2.4.1
+    scipy==0.12.0
+    six==1.3.0
+    stevedore==0.10
+    textutils==0.1
+    tornado==3.1
+    virtualenv==1.9.1
+    virtualenv-clone==0.2.4
+    virtualenvwrapper==4.0
+    wsgiref==0.1.2
 
 
 
