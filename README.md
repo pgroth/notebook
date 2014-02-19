@@ -18,7 +18,7 @@ Current Notebooks
 
 Setup
 -----
-August 27, 2013
+Feb. 19 2013
 I use Mac OS X 10.8.4
 
 Software is installed through [homebrew](http://brew.sh). For iPython I'm using virtualenv + virtualenvwrapper installed using [Virtualenv Burrito](https://github.com/brainsik/virtualenv-burrito). Installed packages are listed below.
