@@ -11,6 +11,9 @@ Current Notebooks
 
 * [Measuring number of occurrences of paths between classes in RDF Graphs](http://nbviewer.ipython.org/urls/raw.github.com/pgroth/notebook/master/RDF_Path_Measurement.ipynb)
 
+* [Visualizing the results of SPARQL queries with matplatlib](https://raw2.github.com/pgroth/notebook/master/sparql-viz-play.ipynb)
+
+
 
 
 Setup
@@ -27,28 +30,37 @@ The setup is based on the instructions at: [http://www.lowindata.com/2013/instal
 
 IPython virtualenv installed packages:
 
-    IPython                             pygments
-    Jinja-1.2-py2.7.egg-info            pylab.py
-    Jinja2-2.7.1-py2.7.egg-info		    pylab.pyc
-    MarkupSafe-0.18-py2.7.egg-info		pyparsing-2.0.1-py2.7.egg-info
-    Pygments-1.6-py2.7.egg-info		    pyparsing.py
-    dateutil				            pyparsing.pyc
-    easy-install.pth			        python_dateutil-2.1-py2.7.egg-info
-    ipython-1.0.0-py2.7.egg-info		pyzmq-13.1.0-py2.7.egg-info
-    jinja					            readline-6.2.4.1-py2.7.egg-info
-    jinja2					            readline.so
-    markupsafe				            scipy
-    matplotlib				            scipy-0.12.0-py2.7.egg-info
-    matplotlib-1.3.0-py2.7-nspkg.pth	setuptools-0.6c11-py2.7.egg
-    matplotlib-1.3.0-py2.7.egg-info		six-1.3.0-py2.7.egg-info
-    mpl_toolkits				        six.py
-    nose					            six.pyc
-    nose-1.3.0-py2.7.egg-info		    tornado
-    numpy					            tornado-3.1-py2.7.egg-info
-    numpy-1.7.1-py2.7.egg-info		    zmq
-    pip-1.3.1-py2.7.egg
-
-
+Jinja==1.2
+Jinja2==2.7.1
+MarkupSafe==0.18
+Pattern==2.6
+Pygments==1.6
+SPARQLWrapper==1.5.2
+distribute==0.6.49
+html5lib==1.0b3
+ipython==1.0.0
+isodate==0.4.9
+matplotlib==1.3.0
+mpld3==0.0.1
+networkx==1.8.1
+nose==1.3.0
+numpy==1.7.1
+pandas==0.12.0
+pyparsing==1.5.7
+python-dateutil==2.1
+pytz==2013.8
+pyzmq==13.1.0
+rdflib==4.0.1
+readline==6.2.4.1
+scipy==0.12.0
+six==1.3.0
+stevedore==0.10
+textutils==0.1
+tornado==3.1
+virtualenv==1.9.1
+virtualenv-clone==0.2.4
+virtualenvwrapper==4.0
+wsgiref==0.1.2
 
 
 
