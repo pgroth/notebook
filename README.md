@@ -3,7 +3,7 @@ notebook
 
 This is [my](http://www.few.vu.nl/~pgroth/) lab notebook. The goal is to be able to keep track of various experiments/hacks/and algorithms in a more reproducible and transparent fashion.
 
-You'll find below the system setup. I'm using [IPython Notebook](http://ipython.org/notebook.html) as the note taking environment. 
+You'll find below the system setup. I'm using [IPython Notebook](http://ipython.org/notebook.html) as the note taking environment.
 
 Current Notebooks
 
@@ -18,8 +18,8 @@ Current Notebooks
 
 Setup
 -----
-Feb. 19 2013
-I use Mac OS X 10.8.4
+May 18, 2014
+I use Mac OS X 10.9.2
 
 Software is installed through [homebrew](http://brew.sh). For iPython I'm using virtualenv + virtualenvwrapper installed using [Virtualenv Burrito](https://github.com/brainsik/virtualenv-burrito). Installed packages are listed below.
 
@@ -109,4 +109,4 @@ Homebrew user environment installed packages and versions:
     swig 2.0.4
     wget 1.13.4
     xz 5.0.3
-    zeromq 3.2.3 
+    zeromq 3.2.3
