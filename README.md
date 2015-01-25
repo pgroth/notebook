@@ -1,11 +1,13 @@
 notebook
 ========
 
-This is [my](http://www.few.vu.nl/~pgroth/) lab notebook. The goal is to be able to keep track of various experiments/hacks/and algorithms in a more reproducible and transparent fashion.
+This is [my](http://pgroth.com) lab notebook. The goal is to be able to keep track of various experiments/hacks/and algorithms in a more reproducible and transparent fashion.
 
 You'll find below the system setup. I'm using [IPython Notebook](http://ipython.org/notebook.html) as the note taking environment.
 
-Current Notebooks
+Notebooks
+
+* [Univeristies in the News: Playing around with the NewsReader API](http://nbviewer.ipython.org/github/pgroth/notebook/blob/master/newsreader-universities.ipynb)
 
 * [Notes on using the Open PHACTS API in Python](http://nbviewer.ipython.org/urls/raw.github.com/pgroth/notebook/master/openphacts-api.ipynb)
 
