@@ -46,7 +46,7 @@ IPython virtualenv installed packages:
     nose-1.3.0-py2.7.egg-info		    tornado
     numpy					            tornado-3.1-py2.7.egg-info
     numpy-1.7.1-py2.7.egg-info		    zmq
-    pip-1.3.1-py2.7.egg
+    pip-1.3.1-py2.7.egg			pattern-2.6
 
 
 
